@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>eSantini - Website Development</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="description" content="Web Development">
+	<link rel="shortcut icon" href="resources/images/favicon.ico">
+
+	<% if( process.env.DEV_ENV ) { %>
+		<link rel="stylesheet" type="text/css" href="/resources/css/bootstrap.min.css">
+
+		<script src="/resources/js/ext/TweenMax.min.js"></script>
+		<script src="/resources/js/ext/ScrollMagic.js"></script>
+		<script src="/resources/js/ext/animation.gsap.min.js"></script>
+		<script src="/resources/js/ext/jquery-1.11.0.min.js"></script>
+
+		<script src="/resources/js/ext/bootstrap.min.js"></script>
+
+		<script src="/resources/js/ext/jquery-ui.min.js"></script>
+	<% } else { %>
+		<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+		<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/TweenMax.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js"></script>
+
+		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<% } %>
+
+	<link rel="stylesheet" type="text/css" href="/resources/css/header.css" />
+	<link rel="stylesheet" type="text/css" href="/resources/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="/resources/css/custom.css" />
+
+
+
+	<link rel="stylesheet" type="text/css" href="/resources/css/home.css" />
+
+
+	<script src="/resources/js/main.js"></script>
+
+</head>
+
+<body>
+
+	<div id="wrap">
+
+		<div class="container">
+
+			<div style="text-align: center;" id="header">
+				<img src="resources/images/Logo.svg" id="headerImg" />
+			</div>
+
+		</div>
+
+
+		<div class="container">
+
+			<div class="mainInfo">
+				<center>
+					<h1>Responsive Web Design</h1>
+				</center>
+			</div>
+			<div id="parallax1" class="parallaxParent">
+				<div id="trigger1"></div>
+				<div class="floater" id="floater1">
+					<div id="perryContainer">
+						<div id="perryHeader"></div>
+						<div id="perryHeader2"></div>
+						<label id="perryTitle">Perry's Website</label>
+						<img id="perryProfPic" src="resources/images/home/perry/profile.png" />
+						<div class="navbar navbar-inverse">
+							<div class="navbar-header">
+								<a class="navbar-brand">
+							<strong>
+			                    <span class="glyphicon glyphicon-home"></span>
+				                Home
+			                </strong>
+						</a>
+								<button class="navbar-toggle" id="fakeNavBarButton">
+			                <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+			            </button>
+							</div>
+							<div class="collapse navbar-collapse" id="PerryHeaderCollapse">
+								<ul class="nav navbar-nav">
+									<li><a> Chasing your tail </a></li>
+									<li><a> How to bark louder </a></li>
+								</ul>
+							</div>
+						</div>
+						<div id="perryEntry">
+							<label id="perryEntryTitle">My First Christmas!</label>
+							<img id="perryEntryImg1" class="perryEntryImg" src="resources/images/home/perry/img1.jpg" />
+							<img id="perryEntryImg2" class="perryEntryImg" src="resources/images/home/perry/img2.jpg" />
+						</div>
+					</div>
+				</div>
+
+				<!--<div id="paralaxBg1" class="paraBG" style="background-image: url(resources/images/home/absLinesPlain1.svg);"></div> -->
+				<div id="paralaxBg101" class="paraBG2" style="background-image: url(resources/images/home/paraBG1.svg);"></div>
+			</div>
+
+			<div class="mainInfo">
+				<center>
+					<h1>Animaciones</h1>
+					<label>Elementos de HTML y SVG animados. Sin flash.</label>
+				</center>
+			</div>
+
+			<div id="parallax2" class="parallaxParent">
+
+
+				<div id="logoContainer">
+					<div id="logo">
+						<!-- The logo is placed here with AJAX from esantini.com/logo -->
+					</div>
+				</div>
+
+				<div id="paralaxBg2" class="paraBG" style="background-image: url(resources/images/home/absLinesPlain2.svg);"></div>
+				<div id="paralaxBg201" class="paraBG2" style="background-image: url(resources/images/home/paraBG2.svg);"></div>
+
+			</div>
+		</div>
+
+		<br><br>
+
+	</div>
+	<!-- wrap div ends -->
+
+	<div class="container">
+		<div class="navbar navbar-default" style="margin-bottom:0px;">
+			<p class="navbar-text pull-left">
+				Contactame a
+				<a href="mailto:esteban@esantini.com">esteban@eSantini.com</a>
+			</p>
+			<!-- 
+    			<a href="https://www.facebook.com/" class="navbar-text pull-right">
+    				<img alt="" src="/resources/images/facebook-logo.png" style="height: 25px;" >
+    			</a>
+    			 -->
+		</div>
+	</div>
+
+
+
+
+
+	<script>
+		var d;
+		$(window).resize(function () {
+			clearTimeout(d);
+			d = setTimeout(scp, 150);
+		});
+
+		$(window).load(function () {
+			scp();
+		});
+
+		function scp() {
+			if ($('.carousel').size() > 0) {
+
+				var carouselHeight = 600;
+				var carouselWidth = $('.carousel')[0].clientWidth;
+
+				if (carouselHeight > carouselWidth) {
+					carouselHeight = carouselWidth;
+				}
+
+				var carouselRatio = carouselWidth / carouselHeight;
+
+				$('.carousel-inner').each(function () {
+					this.setAttribute("style", "height:" + carouselHeight + "px");
+				});
+
+				$('.carouselSlider-size').find('img').each(function () {
+
+					var imgRatio = this.naturalWidth / this.naturalHeight;
+
+					var imgClass = '';
+					if (imgRatio > carouselRatio) {
+
+						if (this.naturalWidth > carouselWidth) {
+							imgClass = 'wide';
+
+							var marginTop = (carouselHeight - ((carouselWidth / this.naturalWidth) * this.naturalHeight)) / 2;
+
+							this.setAttribute('style', 'margin-top: ' + marginTop + 'px;');
+						}
+						else {
+							imgClass = 'small';
+						}
+
+					} else {
+						if (this.naturalHeight > carouselHeight) {
+							imgClass = 'tall';
+							this.setAttribute('style', 'height:' + carouselHeight + 'px;');
+						}
+						else {
+							imgClass = 'small';
+						}
+					}
+
+					this.className = imgClass;
+
+					if (imgClass == 'small') {
+						var marginTop = (carouselHeight - this.height) / 2;
+						this.setAttribute('style', 'margin-top:' + marginTop + 'px');
+					}
+
+				});
+			};
+		};
+
+		var kkeys = [],
+			konami = "38,38,40,40,37,39,37,39,66,65";
+		var audio = new Audio('resources/Toasty.mp3');
+
+		$(document).keydown(function (e) {
+			kkeys.push(e.keyCode);
+			if (kkeys.toString().indexOf(konami) >= 0) {
+				audio.play();
+				setTimeout(function () { $("#toasty").addClass('show'); }, 300);
+				setTimeout(function () { $("#toasty").removeClass('show'); }, 1000);
+				kkeys = [];
+			}
+		});
+	</script>
+	<div id="toasty">
+		<img alt="" src="resources/images/spiderToasty.png">
+	</div>
+</body>
+
+</html>
+
+<script src="resources/js/home.js"></script>

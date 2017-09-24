@@ -1,0 +1,59 @@
+@CHARSET "ISO-8859-1";
+
+@font-face { font-family: mainFontRegular; src: url('AlteHaasGroteskRegular.ttf'); }
+@font-face { font-family: mainFontBold; src: url('AlteHaasGroteskBold.ttf'); }
+
+html, body {
+	font-family: "mainFontRegular", Helvetica, sans-serif ;
+	font-size: 16px;
+	background-color: #6B6A68;
+	color: white;
+}
+
+
+.postTitle {
+	color:#00A450;
+	font-family:mainFontBold;
+}
+.postTitle:hover {
+	color:#00A450;
+	font-family:mainFontBold;
+}
+
+.paginaSeccionada img {
+	max-width: 100%;
+	height: auto !important;
+}
+.paginaSeccionada iframe {
+	max-width: 100%;
+}
+
+
+#toasty {
+	position: fixed;
+	bottom: 0;
+	right: -130px;
+	z-index: 999;
+	
+	-webkit-transition-property: right;
+	-moz-transition-property: right;
+	-o-transition-property: right;
+	-ms-transition-property: right;
+	transition-property: right;
+	
+	-webkit-transition-duration: 0.2s;
+	-moz-transition-duration: 0.2s;
+	-o-transition-duration: 0.2s;
+	-ms-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+	
+	-webkit-transition-timing-function: linear; 
+	transition-timing-function: linear;
+}
+#toasty img {
+	width: 130px;
+	height: auto;
+}
+#toasty.show {
+	right: 0px;
+}

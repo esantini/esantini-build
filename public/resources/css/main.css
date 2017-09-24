@@ -1,0 +1,193 @@
+@CHARSET "ISO-8859-1";
+
+html, body {
+	height: 100%;
+}
+
+input {
+	color: black;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+.postImage {
+	position: relative; 
+  	width: 95%; /* for IE 6 */
+}
+
+.textOnImage {
+	position: absolute;
+	bottom: 50px;
+	left: 0;
+}
+.spanOnImage {
+	color: white; 
+	letter-spacing: -1px;  
+	background: rgb(0, 0, 0); /* fallback color */
+	background: rgba(0, 0, 0, 0.7);
+	padding: 10px;
+}
+.miniTextOnImage {
+	position: absolute;
+	bottom: 15px;
+	left: 0;
+}
+.miniSpanOnImage {
+	color: white; 
+	font: bold 12px/23px Helvetica, Sans-Serif; 
+	letter-spacing: -1px;  
+	background: rgb(0, 0, 0); /* fallback color */
+	background: rgba(0, 0, 0, 0.7);
+	padding: 5px;
+}
+#estTempLink:hover {
+	color: yellow !important;
+}
+#estTempLink {
+	color: #B8B800 !important;
+}
+
+@media(max-width:991px){
+	.nav>li>a {
+		padding-left: 10px;
+		padding-right:10px
+    }
+}
+
+.btn-info {
+	background-color: white;
+	color: #31B0D5;
+}
+.btn-success {
+	background-color: #00A450;
+}
+.well {
+	color: #6C6D70;
+}
+.cke_source {
+	color: #6C6D70;
+}
+
+/* To show the little spider on the background only when the content doesn't overlap */
+@media(min-width:1250px){
+	html, body {
+		background-image: url(../images/background-spider.png);
+	    background-repeat: no-repeat;
+	    background-attachment: fixed;
+	    background-position: left top; 
+	}
+}
+@media (max-width:1199px) and (min-width:1045px) {
+	html, body {
+		background-image: url(../images/background-spider.png);
+	    background-repeat: no-repeat;
+	    background-attachment: fixed;
+	    background-position: left top; 
+	}
+}
+@media (max-width:991px) and (min-width:833px) {
+	html, body {
+		background-image: url(../images/background-spider.png);
+	    background-repeat: no-repeat;
+	    background-attachment: fixed;
+	    background-position: left top; 
+	}
+}
+
+.myTooltip {
+    outline:none; 
+}
+.myTooltip strong {
+    line-height:30px;
+}
+.myTooltip:hover {
+    text-decoration:none;
+}
+.myTooltip .tooltipInfo {
+    z-index:10;
+    display:none; 
+    padding:14px 20px;
+    margin-top: 0px; 
+    margin-left:28px;
+    width:300px; 
+    line-height:16px;
+    border-radius:4px;
+    box-shadow: 5px 5px 8px #CCC;
+}
+.myTooltip:hover .tooltipInfo{
+    display:inline; 
+    position:absolute; 
+    color:white;
+    border:1px solid white; 
+    background: black;
+}
+.tooltipArrow {
+    z-index:20;
+    position:absolute;
+    top:10px;
+    border:0;
+    left:-12px;
+}
+.tooltipInfo img {
+	max-width: 260px;
+	height: auto;
+}
+
+
+.carousel-inner{
+	/* height is set by javascript */ 
+	width:100%;
+	background-color: black;
+}
+.carousel {
+	width:100%; 
+	margin:0 auto; /* center your carousel if other than 100% */ 
+}
+
+
+.carouselSlider-size img.wide {
+	width: 100%;
+	height: auto;
+}
+.carouselSlider-size img.tall {
+	width: auto;
+}
+.carouselSlider-size img.small {
+	
+}
+.popupIMContent, .popupIMContent iframe {
+	min-width: 900px;
+	min-height: 700px;
+}
+
+.showHideLink {
+	cursor: pointer; cursor: hand;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

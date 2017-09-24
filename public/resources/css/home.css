@@ -1,0 +1,315 @@
+.parallaxParent {
+	height: 800px;
+	overflow: hidden;
+	background-color: #181818;
+	position: relative;
+}
+.parallaxParent > .paraBG {
+	height: 200%;
+	position: relative;
+	top: -100%;
+	background-size: 110% auto;
+	background-position: 20% 100%;
+	z-index: 2;
+}
+.parallaxParent > .paraBG2 {
+	height: 200%;
+	width: 100%;
+	position: absolute;
+	top: -100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#trigger1 {
+	margin-top: 250px;
+}
+
+
+.mainInfo {
+	width: 100%;
+	position:relative;
+}
+.mainInfo h1 {
+	font-weight: 700;
+	color: #6CC287;
+}
+.mainInfo label {
+	width: 60%;
+	font-weight: 400;
+	font-size: 1.1em;
+}
+
+
+.floater {
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: black;
+	z-index: 3;
+	overflow-x: hidden;
+	
+	border-style: solid;
+	border-width: 67px 10px 10px 10px;
+	-moz-border-image: url(../images/home/perry/border.png) 67 10 10 10 stretch;
+	-webkit-border-image: url(../images/home/perry/border.png) 67 10 10 10 stretch;
+	-o-border-image: url(../images/home/perry/border.png) 67 10 10 10 stretch;
+	border-image: url(../images/home/perry/border.png) 67 10 10 10 stretch;
+}
+.floater.celView {
+	border-style: solid transparent;
+	border-width: 45px 15px 50px 15px;
+	-moz-border-image: url(../images/home/perry/borderCel.png) 45 15 52 15 stretch;
+	-webkit-border-image: url(../images/home/perry/borderCel.png) 45 15 52 15 stretch;
+	-o-border-image: url(../images/home/perry/borderCel.png) 45 15 52 15 stretch;
+	border-image: url(../images/home/perry/borderCel.png) 45 15 52 15 fill stretch;
+}
+#perryContainer {
+	position:relative;
+	background-color: beige;
+	height: 550px;
+	overflow: hidden;
+}
+
+#perryProfPic {
+	height: 100px;
+	
+	position: absolute;
+	left: 283px;
+	top: 10px;
+}
+#perryTitle {
+	position: absolute;
+	left: 99px;
+	top: 51px;
+	font-size: 1.4em;
+}
+#perryHeader {
+	background-color: #008340;
+	width: 100%;
+	height: 75px;
+}
+#perryHeader2 {
+	background-color: #21B469;
+	width: 100%;
+	height: 40px;
+}
+#perryEntry {
+	position: relative;
+}
+#perryEntryTitle {
+	position: relative;
+	left: 15px;
+	top: 10px;
+	display: block;
+	margin-bottom: 10px;
+	font-size: 1.2em;
+}
+.perryEntryImg {
+	width: 200px;
+	margin-left: 20px;
+}
+#perryEntryImg2 {
+	position: absolute;
+	left: 220px;
+	top: 36px;
+}
+
+.celView #perryContainer {
+	height: 725px;
+}
+.celView .perryEntryImg {
+   	margin-left: 10px;
+}
+.celView #perryTitle {
+	left: 32px;
+	top: 129px;
+}
+.celView #perryProfPic {
+	left: 63px;
+	top: 20px;
+}
+.celView #perryHeader {
+	height: 154px;
+}
+.celView #perryHeader2 {
+	height: 20px;
+}
+.celView #perryEntryImg2 {
+	left: 0px;
+	top: 244px;
+	margin-bottom: 20px;
+}
+.celView .navbar-toggle {
+	display: inline-block !important;
+	
+}
+.celView #PerryHeaderCollapse{
+	display: none !important;
+	float: right;
+}
+
+#perryProfPic, #perryTitle {
+	-webkit-transition-property: left, top;
+	-moz-transition-property: left, top;
+	-o-transition-property: left, top;
+	-ms-transition-property: left, top;
+	transition-property: left, top;
+}
+#perryHeader, #perryHeader2 {
+	-webkit-transition-property: height;
+	-moz-transition-property: height;
+	-o-transition-property: height;
+	-ms-transition-property: height;
+	transition-property: height;
+}
+#floater1 * {
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	-ms-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	
+	-webkit-transition-delay: 0.2s;
+	-moz-transition-delay: 0.2s;
+	-o-transition-delay: 0.2s;
+	-ms-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+	
+	-webkit-transition-timing-function: ease; 
+	transition-timing-function: ease;
+}
+#floater1 a {
+	cursor: hand;
+	cursor: pointer;
+}
+
+
+#logoContainer {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 98;
+}
+#logo {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 99;
+}
+
+
+#adminTools {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 98;
+}
+#toolsContainer {
+	width: 600px;
+	height: 700px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+	background-color: beige;
+	border-radius: 10px;
+	
+	position: absolute;
+	overflow: auto;
+	z-index: 99;
+	color: #222222;
+}
+#replayBtn, #replayLbl {
+	position:absolute;
+	left: 50%;
+	cursor: pointer;
+	cursor: hand;
+}
+#replayBtn {
+	width: 50px;
+	height: 50px;
+	transform: translate(-50%, -27px);
+}
+#replayLbl {
+	transform: translate(-50%, 18px);
+}
+.toolsButton {
+	padding: 5px;
+	margin: 5px;
+}
+#adminTools #adminIntro .theInfo {
+	font-size: 1.1em;
+}
+#adminTools .theInfo {
+	text-align: justify;
+}
+#adminTools .inputTitle {
+	width: 100%;
+}
+#entriesList .inputTitle {
+	display: none;
+}
+#adminTools .responseMsg {
+	text-align: center;
+}
+#adminTools .panel-heading * {
+	font-weight: 700;
+	font-size: 1.2em;
+}
+#adminTools #addPanel {
+	display: none;
+}
+#adminTools #genTools {
+	margin-bottom: 20px;
+}
+#sortable li {
+	cursor: move;
+}
+
+
+/*
+	*
+	* "Are you sure?" prompt
+	*
+*/
+	#ruSure {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		
+		z-index: 9999;
+		left: 0;
+		top: 0;
+		
+		display: none;
+	}
+	#sureBackground {
+		background-color: rgba(0,0,0,.5);
+		width: 100%;
+		height: 100%;
+	}
+	#sureBox {
+		position: absolute;
+		background-color: beige;
+		color: black;
+		width: 200px;
+		height: 100px;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%); 
+	}
+	#sureContainer {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+	#ruSure .toolsButton {
+		padding: 1px 6px;
+	}
+

@@ -1,0 +1,28 @@
+@CHARSET "ISO-8859-1";
+
+
+@media(max-width:450px){
+	#headerImg {
+		height: 100px;
+	}	
+}
+@media(min-width:450px){
+	#headerImg {
+		height: 176px;
+	}
+}
+@media(min-width:590px){
+	#headerImg {
+		height: 223px;
+	}	
+}
+@media(min-width:680px){
+	#headerImg {
+		height: 257px;
+	}
+}
+
+#scroller {
+    z-index: 999;
+}
+
