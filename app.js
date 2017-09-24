@@ -20,6 +20,9 @@ app.use('/$', function (req, res, next) {
 app.use('/logo$', function (req, res, next) {
     res.render('logo', { page: "logo" });
 });
+app.use('/earthVenus$', function (req, res, next) {
+    res.render('earthVenus', { page: "tattoo" });
+});
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
     var err = new Error('Not Found');

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>eSantini - Website Development</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="description" content="Web Development">
+	<link rel="shortcut icon" href="resources/images/favicon.ico">
+
+	<% if( process.env.DEV_ENV ) { %>
+		<link rel="stylesheet" type="text/css" href="/resources/css/bootstrap.min.css">
+	<% } else { %>
+		<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<% } %>
+
+	<link rel="stylesheet" type="text/css" href="/resources/css/header.css" />
+	<link rel="stylesheet" type="text/css" href="/resources/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="/resources/css/custom.css" />
+
+	<link rel="stylesheet" type="text/css" href="/resources/css/home.css" />
+
+</head>
+
+<body>
+
+	<div id="wrap">
+
+		<div class="container">
+
+			<div style="text-align: center;" id="header">
+				<img src="/resources/images/Logo.svg" id="headerImg" />
+			</div>
+
+		</div>
+
+
+		<div class="container">
+			
+			<style>
+				.highlight {
+					background-color: #038400;
+					font-size: 1.5em;
+				}
+			</style>
+			<h1>8 earth orbits = 13 venus orbits.</h1>
+			<h3>
+				Draw a line between Earth & Venus every 
+				<strong> <span id="degreeSpan"></span> </strong>
+				degrees
+			</h3>
+			
+			<input type"number" id="frequency" value = '144' type="number">
+			
+			<br>
+			Cycle ends after <strong><span id="Years"></span> </strong> years.
+			<br>
+			Lines Drawn: <strong><span id="lineSpan"></span> </strong>
+			<br>
+			
+			<canvas id="myCanvas" width="600" ></canvas>
+		
+		
+			<script src="/resources/js/tattoo.js"></script>
+		</div>
+	</div>
+</body>
+
+</html>
